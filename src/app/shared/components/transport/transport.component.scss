@@ -1,0 +1,43 @@
+.transport-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transport-wrapper-infos {
+    display: flex;
+    gap: 12rem;
+    align-items: center;
+}
+
+.transport-icon {
+    height: 48rem;
+    width: 48rem;
+}
+
+.transport-details{
+    display: flex;
+    flex-direction: column;
+
+    &-name{
+        font-size: 16rem;
+        font-weight: 600;
+        color: var(--primary-text-color);
+    }
+
+    &-stop{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        & svg{
+            height: 13rem;
+        }
+
+        & p{
+            color: #64748B;
+            font-size: 13rem;
+            font-weight: 500;
+        }
+    }
+}

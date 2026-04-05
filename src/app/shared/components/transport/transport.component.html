@@ -1,0 +1,29 @@
+<div class="transport-wrapper">
+    <div class="transport-wrapper-infos">
+        <img [src]="`/assets/star-icons/${infos().icon}.png`" alt="" class="transport-icon">
+        <div class="transport-details">
+            <h3 class="transport-details-name">{{ infos().name }}</h3>
+            <div class="transport-details-stop">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 16" fill="none">
+                    <path
+                        d="M4.67285 7.01101C4.67285 7.63083 4.91908 8.22527 5.35736 8.66356C5.79564 9.10184 6.39008 9.34807 7.00991 9.34807C7.62974 9.34807 8.22418 9.10184 8.66246 8.66356C9.10074 8.22527 9.34697 7.63083 9.34697 7.01101C9.34697 6.39118 9.10074 5.79674 8.66246 5.35846C8.22418 4.92017 7.62974 4.67395 7.00991 4.67395C6.39008 4.67395 5.79564 4.92017 5.35736 5.35846C4.91908 5.79674 4.67285 6.39118 4.67285 7.01101Z"
+                        stroke="#64748B" stroke-width="1.55804" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M11.4184 11.4179L8.11299 14.7233C7.82084 15.0151 7.42479 15.1791 7.01184 15.1791C6.5989 15.1791 6.20284 15.0151 5.9107 14.7233L2.60454 11.4179C1.73299 10.5463 1.13947 9.43583 0.899025 8.22692C0.658582 7.01801 0.782018 5.76495 1.25372 4.62619C1.72543 3.48743 2.52422 2.51412 3.54909 1.82934C4.57395 1.14455 5.77886 0.779053 7.01145 0.779053C8.24404 0.779053 9.44895 1.14455 10.4738 1.82934C11.4987 2.51412 12.2975 3.48743 12.7692 4.62619C13.2409 5.76495 13.3643 7.01801 13.1239 8.22692C12.8834 9.43583 12.2899 10.5463 11.4184 11.4179Z"
+                        stroke="#64748B" stroke-width="1.55804" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p>{{ infos().stop }}</p>
+            </div>
+        </div>
+    </div>
+    @if (infos().type === 'metro') {
+        <app-pill [text]="'3 ~ 5min'"></app-pill>
+    }
+    @if (infos().type === 'bikes') {
+        @if ((data$ | async); as bikeStation) {
+            <app-pill [text]="`${bikeStation.nombrevelosdisponibles} vélos`"></app-pill>
+        } @else {
+            <app-pill [text]="'Indisponible'" [loading]="true"></app-pill>
+        }
+    }
+</div>

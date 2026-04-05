@@ -1,0 +1,101 @@
+.dashboard-header-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 6rem;
+            color: var(--main-color);
+
+            & svg {
+                height: 32rem;
+            }
+
+            & h1 {
+                font-size: 32rem;
+                line-height: 1.2;
+                font-weight: 700;
+            }
+        }
+
+        .school {
+            display: flex;
+            align-items: center;
+            gap: 7.2rem;
+            color: var(--third-color);
+            padding: 0 4rem;
+
+            & svg {
+                height: 18rem;
+            }
+
+            & p {
+                font-size: 14rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &-right {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        gap: 16rem;
+
+        .weather {
+            & svg {
+                height: 40rem;
+            }
+        }
+
+        .time {
+            display: flex;
+            align-items: center;
+            gap: 12rem;
+
+            & .pill-wrapper {
+                height: 18rem;
+                width: 18rem;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                aspect-ratio: 1/1;
+                background-color: #a7f3d0;
+
+                & .pill {
+                    height: 80%;
+                    width: 80%;
+                    aspect-ratio: 1/1;
+                    background-color: #065f46;
+                    border-radius: 100%;
+                    animation: pulse 1.25s infinite;
+
+                    @keyframes pulse {
+                        0% {
+                            transform: scale(0);
+                        }
+                        100% {
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+
+            & p {
+                font-size: 18rem;
+                font-weight: 600;
+            }
+        }
+    }
+}

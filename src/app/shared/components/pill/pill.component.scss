@@ -1,0 +1,25 @@
+.pill-wrapper {
+    height: 32rem;
+    width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.25rem solid #64748B;
+    border-radius: 100rem;
+
+    & p {
+        color: #64748b;
+        font-size: 12rem;
+        font-weight: 600;
+    }
+
+    &.loading{
+        animation: border-pulse 1.5s infinite ease-in-out;
+    }
+}
+
+@keyframes border-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.375; }
+    100% { opacity: 1; }
+}
