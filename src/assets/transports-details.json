@@ -1,92 +1,386 @@
 {
-    "metroLines": [
-        {
-            "name": "Métro B",
-            "stop": "Beaulieu U.",
-            "mainColor": "#00893E",
-            "secondaryColor": "#FFFFFF",
-            "icon": ""
-        }
-    ],
-    "bikeLines": [
-        {
-            "name": "Station Vélo Star ",
-            "stop": "Beaulieu Chimie",
-            "mainColor": "#004B96",
-            "secondaryColor": "#FFFFFF",
-            "icon": ""
-        },
-        {
-            "name": "Station Vélo Star ",
-            "stop": "Beaulieu U.",
-            "mainColor": "#004B96",
-            "secondaryColor": "#FFFFFF",
-            "icon": ""
-        }
-    ],
-    "busLines": [
-        {
-            "name": "ZA Saint-Sulpice",
-            "stop": "Beaulieu INSA",
-            "mainColor": "#6F2282",
-            "secondaryColor": "#FFFFFF",
-            "icon": ""
-        },
-        {
-            "name": "Grand Quarter",
-            "stop": "Beaulieu INSA",
-            "mainColor": "#6F2282",
-            "secondaryColor": "#FFFFFF",
-            "icon": ""
-        },
-        {
-            "name": "Rigourdière",
-            "stop": "Tournebride",
-            "mainColor": "#61C3D9",
-            "secondaryColor": "#1A171B",
-            "icon": ""
-        },
-        {
-            "name": "Monniais",
-            "stop": "Beaulieu INSA",
-            "mainColor": "#61C3D9",
-            "secondaryColor": "#FFFFFF",
-            "icon": ""
-        },
-        {
-            "name": "Roazhon Park",
-            "stop": "Beaulieu INSA",
-            "mainColor": "#A96F23",
-            "secondaryColor": "#FFFFFF",
-            "icon": ""
-        },
-        {
-            "name": "Beaulieu Chimie",
-            "stop": "Beaulieu INSA",
-            "mainColor": "#EF859D",
-            "secondaryColor": "#000000",
-            "icon": ""
-        },
-        {
-            "name": "Porte de Cleunay",
-            "stop": "Beaulieu INSA",
-            "mainColor": "#EF859D",
-            "secondaryColor": "#000000",
-            "icon": ""
-        },
-        {
-            "name": "République",
-            "stop": "Tournebride",
-            "mainColor": "#E4003A",
-            "secondaryColor": "#FFFFFF",
-            "icon": ""
-        },
-        {
-            "name": "Anjou",
-            "stop": "Tournebride",
-            "mainColor": "#E4003A",
-            "secondaryColor": "#FFFFFF",
-            "icon": ""
-        }
-    ]
+    "esir": {
+        "metroLines": [
+            {
+                "id": "1002",
+                "name": "Métro B",
+                "stop": "Beaulieu U.",
+                "icon": "metro-b"
+            }
+        ],
+        "bikeLines": [
+            {
+                "id": "5547",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu Chimie",
+                "icon": "bike-station"
+            },
+            {
+                "id": "5548",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu U.",
+                "icon": "bike-station"
+            }
+        ],
+        "busLines": [
+            {
+                "id": "0004",
+                "sens": 1,
+                "name": "ZA Saint-Sulpice",
+                "stop": "Beaulieu INSA",
+                "icon": "c4"
+            },
+            {
+                "id": "0004",
+                "sens": 0,
+                "name": "Grand Quarter",
+                "stop": "Beaulieu INSA",
+                "icon": "c4"
+            },
+            {
+                "id": "0006",
+                "sens": 0,
+                "name": "Cesson-Sévigné",
+                "stop": "Tournebride",
+                "icon": "c6"
+            },
+            {
+                "id": "0006",
+                "sens": 1,
+                "name": "Aeroport",
+                "stop": "Tournebride",
+                "icon": "c6"
+            },
+            {
+                "id": "0014",
+                "sens": 1,
+                "name": "Monniais",
+                "stop": "Beaulieu INSA",
+                "icon": "14"
+            },
+            {
+                "id": "0014",
+                "sens": 0,
+                "name": "Roazhon Park",
+                "stop": "Beaulieu INSA",
+                "icon": "14"
+            },
+            {
+                "id": "0010",
+                "sens": 1,
+                "name": "Beaulieu Chimie",
+                "stop": "Beaulieu INSA",
+                "icon": "10"
+            },
+            {
+                "id": "0010",
+                "sens": 0,
+                "name": "Porte de Cleunay",
+                "stop": "Beaulieu INSA",
+                "icon": "10"
+            },
+            {
+                "id": "0067",
+                "sens": 1,
+                "name": "Anjou",
+                "stop": "Tournebride",
+                "icon": "67"
+            },
+            {
+                "id": "0067",
+                "sens": 0,
+                "name": "République",
+                "stop": "Tournebride",
+                "icon": "67"
+            }
+        ]
+    },
+    "rsb": {
+        "metroLines": [
+            {
+                "id": "1002",
+                "name": "Métro B",
+                "stop": "Beaulieu U.",
+                "icon": "metro-b"
+            }
+        ],
+        "bikeLines": [
+            {
+                "id": "5547",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu Chimie",
+                "icon": "bike-station"
+            },
+            {
+                "id": "5548",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu U.",
+                "icon": "bike-station"
+            }
+        ],
+        "busLines": [
+            {
+                "id": "0004",
+                "sens": 1,
+                "name": "ZA Saint-Sulpice",
+                "stop": "Beaulieu INSA",
+                "icon": "c4"
+            },
+            {
+                "id": "0004",
+                "sens": 0,
+                "name": "Grand Quarter",
+                "stop": "Beaulieu INSA",
+                "icon": "c4"
+            },
+            {
+                "id": "0006",
+                "sens": 0,
+                "name": "Cesson-Sévigné",
+                "stop": "Tournebride",
+                "icon": "c6"
+            },
+            {
+                "id": "0006",
+                "sens": 1,
+                "name": "Aeroport",
+                "stop": "Tournebride",
+                "icon": "c6"
+            },
+            {
+                "id": "0014",
+                "sens": 1,
+                "name": "Monniais",
+                "stop": "Beaulieu INSA",
+                "icon": "14"
+            },
+            {
+                "id": "0014",
+                "sens": 0,
+                "name": "Roazhon Park",
+                "stop": "Beaulieu INSA",
+                "icon": "14"
+            },
+            {
+                "id": "0010",
+                "sens": 1,
+                "name": "Beaulieu Chimie",
+                "stop": "Beaulieu INSA",
+                "icon": "10"
+            },
+            {
+                "id": "0010",
+                "sens": 0,
+                "name": "Porte de Cleunay",
+                "stop": "Beaulieu INSA",
+                "icon": "10"
+            },
+            {
+                "id": "0067",
+                "sens": 1,
+                "name": "Anjou",
+                "stop": "Tournebride",
+                "icon": "67"
+            },
+            {
+                "id": "0067",
+                "sens": 0,
+                "name": "République",
+                "stop": "Tournebride",
+                "icon": "67"
+            }
+        ]
+    },
+    "esup": {
+        "metroLines": [
+            {
+                "id": "1002",
+                "name": "Métro B",
+                "stop": "Beaulieu U.",
+                "icon": "metro-b"
+            }
+        ],
+        "bikeLines": [
+            {
+                "id": "5547",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu Chimie",
+                "icon": "bike-station"
+            },
+            {
+                "id": "5548",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu U.",
+                "icon": "bike-station"
+            }
+        ],
+        "busLines": [
+            {
+                "id": "0004",
+                "sens": 1,
+                "name": "ZA Saint-Sulpice",
+                "stop": "Beaulieu INSA",
+                "icon": "c4"
+            },
+            {
+                "id": "0004",
+                "sens": 0,
+                "name": "Grand Quarter",
+                "stop": "Beaulieu INSA",
+                "icon": "c4"
+            },
+            {
+                "id": "0006",
+                "sens": 0,
+                "name": "Cesson-Sévigné",
+                "stop": "Tournebride",
+                "icon": "c6"
+            },
+            {
+                "id": "0006",
+                "sens": 1,
+                "name": "Aeroport",
+                "stop": "Tournebride",
+                "icon": "c6"
+            },
+            {
+                "id": "0014",
+                "sens": 1,
+                "name": "Monniais",
+                "stop": "Beaulieu INSA",
+                "icon": "14"
+            },
+            {
+                "id": "0014",
+                "sens": 0,
+                "name": "Roazhon Park",
+                "stop": "Beaulieu INSA",
+                "icon": "14"
+            },
+            {
+                "id": "0010",
+                "sens": 1,
+                "name": "Beaulieu Chimie",
+                "stop": "Beaulieu INSA",
+                "icon": "10"
+            },
+            {
+                "id": "0010",
+                "sens": 0,
+                "name": "Porte de Cleunay",
+                "stop": "Beaulieu INSA",
+                "icon": "10"
+            },
+            {
+                "id": "0067",
+                "sens": 1,
+                "name": "Anjou",
+                "stop": "Tournebride",
+                "icon": "67"
+            },
+            {
+                "id": "0067",
+                "sens": 0,
+                "name": "République",
+                "stop": "Tournebride",
+                "icon": "67"
+            }
+        ]
+    },
+    "insa": {
+        "metroLines": [
+            {
+                "id": "1002",
+                "name": "Métro B",
+                "stop": "Beaulieu U.",
+                "icon": "metro-b"
+            }
+        ],
+        "bikeLines": [
+            {
+                "id": "5547",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu Chimie",
+                "icon": "bike-station"
+            },
+            {
+                "id": "5548",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu U.",
+                "icon": "bike-station"
+            }
+        ],
+        "busLines": [
+            {
+                "id": "0004",
+                "sens": 1,
+                "name": "ZA Saint-Sulpice",
+                "stop": "Beaulieu INSA",
+                "icon": "c4"
+            },
+            {
+                "id": "0004",
+                "sens": 0,
+                "name": "Grand Quarter",
+                "stop": "Beaulieu INSA",
+                "icon": "c4"
+            },
+            {
+                "id": "0006",
+                "sens": 0,
+                "name": "Cesson-Sévigné",
+                "stop": "Tournebride",
+                "icon": "c6"
+            },
+            {
+                "id": "0006",
+                "sens": 1,
+                "name": "Aeroport",
+                "stop": "Tournebride",
+                "icon": "c6"
+            },
+            {
+                "id": "0014",
+                "sens": 1,
+                "name": "Monniais",
+                "stop": "Beaulieu INSA",
+                "icon": "14"
+            },
+            {
+                "id": "0014",
+                "sens": 0,
+                "name": "Roazhon Park",
+                "stop": "Beaulieu INSA",
+                "icon": "14"
+            },
+            {
+                "id": "0010",
+                "sens": 1,
+                "name": "Beaulieu Chimie",
+                "stop": "Beaulieu INSA",
+                "icon": "10"
+            },
+            {
+                "id": "0010",
+                "sens": 0,
+                "name": "Porte de Cleunay",
+                "stop": "Beaulieu INSA",
+                "icon": "10"
+            },
+            {
+                "id": "0067",
+                "sens": 1,
+                "name": "Anjou",
+                "stop": "Tournebride",
+                "icon": "67"
+            },
+            {
+                "id": "0067",
+                "sens": 0,
+                "name": "République",
+                "stop": "Tournebride",
+                "icon": "67"
+            }
+        ]
+    }
 }

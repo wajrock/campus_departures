@@ -1,6 +1,6 @@
 <div class="transport-wrapper">
     <div class="transport-wrapper-infos">
-        <img [src]="`/assets/star-icons/${infos().icon}.png`" alt="" class="transport-icon">
+        <img [src]="`/assets/star-icons/${infos().icon}.webp`" [class.bus-icon]="infos().type === 'bus'" alt="" class="transport-icon">
         <div class="transport-details">
             <h3 class="transport-details-name">{{ infos().name }}</h3>
             <div class="transport-details-stop">
@@ -17,13 +17,40 @@
         </div>
     </div>
     @if (infos().type === 'metro') {
-        <app-pill [text]="'3 ~ 5min'"></app-pill>
+        <app-pill [data]="{value: '3 ~ 5min', type: 'metro'}"></app-pill>
     }
     @if (infos().type === 'bikes') {
         @if ((data$ | async); as bikeStation) {
-            <app-pill [text]="`${bikeStation.nombrevelosdisponibles} vélos`"></app-pill>
+            @if (isBikeStation(bikeStation)) {
+                <app-pill [data]="{value: bikeStation.nombrevelosdisponibles, valueState: 'existing', type: 'bikes'}" [inactive]="bikeStation.nombrevelosdisponibles === 0"></app-pill>
+            }
         } @else {
-            <app-pill [text]="'Indisponible'" [loading]="true"></app-pill>
+            <app-pill [data]="{value: '', valueState: 'missing', type: 'bikes'}" [loading]="true"></app-pill>
+        }
+    }
+    @if (infos().type === 'bus') {
+        @if ((data$ | async); as busLines) {
+            @if (isBusLines(busLines)) {
+                <div class="transport-wrapper-times">
+                    @if (busLines.length > 0) {
+                        @for (busLine of busLines.slice(0, 3); track $index) {
+                            <app-pill key [data]="{value: busLine.depart, valueState: 'existing', type: 'bus'}" class="transport-wrapper-times-item" [inactive]="($index === 1 || $index === 2)"></app-pill>
+                        }
+
+                        @for (i of [].constructor(3 - (busLines.length > 3 ? 3 : busLines.length)); track $index) {
+                            <app-pill [data]="{value: '', valueState: 'missing', type: 'bus'}" class="transport-wrapper-times-item"></app-pill>
+                        }
+                    } @else {
+                        <app-pill [data]="{value: '', valueState: 'empty', type: 'bus'}" class="transport-wrapper-times-item"></app-pill>
+                    }
+                </div>
+            }
+        } @else {
+            <div class="transport-wrapper-times">
+                <app-pill [data]="{value: '', valueState: 'missing', type: 'bus'}" [loading]="true" class="transport-wrapper-times-item"></app-pill>
+                <app-pill [data]="{value: '', valueState: 'missing', type: 'bus'}" [loading]="true" class="transport-wrapper-times-item"></app-pill>
+                <app-pill [data]="{value: '', valueState: 'missing', type: 'bus'}" [loading]="true" class="transport-wrapper-times-item"></app-pill>
+            </div>        
         }
     }
 </div>

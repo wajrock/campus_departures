@@ -11,8 +11,13 @@
 }
 
 .transport-icon {
-    height: 48rem;
-    width: 48rem;
+    height: 44rem;
+    width: 44rem;
+
+    &.bus-icon {
+        height: 40rem;
+        width: 40rem;
+    }
 }
 
 .transport-details{
@@ -39,5 +44,17 @@
             font-size: 13rem;
             font-weight: 500;
         }
+    }
+}
+
+.transport-wrapper-times {
+    display: flex;
+    gap: 8rem;
+    height: 32rem;
+    width: 225rem;
+
+    &-item{
+        width: 100%;
+        height: 100%;
     }
 }

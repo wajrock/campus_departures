@@ -1,5 +1,5 @@
-<div class="pill-wrapper" [class.loading]="loading()">
-    @if (!loading()) {
-        <p>{{text()}}</p>
-    }
-</div>
+<div class="pill-wrapper" [class.loading]="loading()" [class.bus-pill]="data().type === 'bus'"
+    [class.inactive]="inactive() || (!loading() && (data().valueState === 'missing' || data().valueState === 'empty'))"
+    [class.urgent]="isUrgent()">
+    <p>{{data() | displayInformationPill: timeService.currentTime()}}</p>
+</div>>

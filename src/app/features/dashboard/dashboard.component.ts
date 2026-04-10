@@ -1,5 +1,5 @@
-import {Component, inject} from '@angular/core';
-import {StarService} from '../../core/star/star.service';
+import {Component} from '@angular/core';
+import transportDetails from '../../../assets/transports-details.json';
 import {HeaderComponent} from "../../shared/components/header/header.component";
 import {TransportComponent} from '../../shared/components/transport/transport.component';
 
@@ -10,5 +10,5 @@ import {TransportComponent} from '../../shared/components/transport/transport.co
     styleUrl: './dashboard.component.scss',
 })
 export class DashboardComponent {
-    private starService = inject(StarService);
+    transportDetails = transportDetails;
 }

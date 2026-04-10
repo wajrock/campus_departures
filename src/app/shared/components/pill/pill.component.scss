@@ -14,12 +14,36 @@
     }
 
     &.loading{
-        animation: border-pulse 1.5s infinite ease-in-out;
+        animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    &.inactive{
+        opacity: .75;
+        border-color: #CBD5E1;
+    }
+
+    &.urgent{
+        animation: urgent-border-pulse 1.5s infinite ease-in-out;
+        border-color: #f43f5e;
+        & p {
+            color: #f43f5e;
+        }
+    }
+
+    &.bus-pill{
+        width: 100%;
+        height: 100%;
     }
 }
 
-@keyframes border-pulse {
+@keyframes pulse {
     0% { opacity: 1; }
     50% { opacity: 0.375; }
+    100% { opacity: 1; }
+}
+
+@keyframes urgent-border-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.375;}
     100% { opacity: 1; }
 }

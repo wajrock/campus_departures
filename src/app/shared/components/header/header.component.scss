@@ -7,8 +7,8 @@
 
     &-left {
         display: flex;
-        flex-direction: column;
-        gap: 4rem;
+        align-items: center;
+        gap: 12rem;
 
         .logo {
             display: flex;
@@ -17,11 +17,11 @@
             color: var(--main-color);
 
             & svg {
-                height: 32rem;
+                height: 28rem;
             }
 
             & h1 {
-                font-size: 32rem;
+                font-size: 28rem;
                 line-height: 1.2;
                 font-weight: 700;
             }
@@ -39,7 +39,7 @@
             }
 
             & p {
-                font-size: 14rem;
+                font-size: 15rem;
                 font-weight: 500;
             }
         }
