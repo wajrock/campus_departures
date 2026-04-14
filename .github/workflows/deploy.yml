@@ -33,6 +33,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/campus_flow/browser/
           server-dir: ./
-          delete: true
-          protocol: ftp
-          port: 21
