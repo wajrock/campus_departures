@@ -1,5 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import {BusLine} from '../models/models';
+import {BusLine} from '../models/api.models';
 
 type BusLineWithDepart = BusLine & { departTime: Date };
 

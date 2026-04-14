@@ -1,11 +1,12 @@
 import {Component, inject, input, OnInit} from '@angular/core';
-import {BikeStation, BusLine, TransportInfos} from '../../models/models';
 import {PillComponent} from '../pill/pill.component';
 import {StarService} from '../../../core/star/star.service';
 import {combineLatest, map, Observable, switchMap, timer} from 'rxjs';
 import {AsyncPipe} from '@angular/common';
 import {ValidBusTimesPipe} from '../../pipes/valid-bus-times.pipe';
 import {TimeService} from '../../../core/time.service';
+import {BikeStation, BusLine} from '../../models/api.models';
+import {TransportInfos} from '../../models/models';
 
 @Component({
     selector: 'app-transport',

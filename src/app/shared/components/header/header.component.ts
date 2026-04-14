@@ -1,4 +1,4 @@
-import {Component, computed, inject} from '@angular/core';
+import {Component, computed, inject, input} from '@angular/core';
 import {TimeService} from '../../../core/time.service';
 
 @Component({
@@ -10,4 +10,5 @@ import {TimeService} from '../../../core/time.service';
 export class HeaderComponent {
     private timeService = inject(TimeService);
     currentTime = computed(() => this.timeService.currentTimeString());
+    schoolName = input<string>();
 }

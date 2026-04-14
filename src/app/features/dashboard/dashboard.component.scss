@@ -7,42 +7,13 @@
     flex-direction: column;
     gap: 48rem;
     background-color: #f8fafc;
-}
 
-.alert-message {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 32rem;
-    width: 100%;
-    height: 100%;
-
-    & .logo {
-        display: flex;
-        align-items: center;
-        gap: 8rem;
-        color: var(--main-color);
-        --size: min(104rem, 300px);
-
-        & svg {
-            height: var(--size);
-        }
-
-        & h1 {
-            font-size: var(--size);
-            line-height: 1.2;
-            font-weight: 700;
-        }
-    }
-
-    & .message{
-        font-size: min(48rem, 125px);
-        font-weight: 600;
-        text-align: center;
-        color: var(--primary-text-color);
+    &.bus-only{
+        gap: 32rem;
     }
 }
+
+
 
 .dashboard-overlay {
     position: absolute;
@@ -60,9 +31,10 @@
 .dashboard-top {
     display: flex;
     gap: 56rem;
+    // justify-content: center;
 
     &-item {
-        width: 100%;
+        width: 319rem;
     }
 }
 
@@ -95,12 +67,4 @@
     }
 }
 
-@media (orientation: portrait) {
-    .dashboard-wrapper {
-        display: none;
-    }
 
-    .alert-message {
-        display: flex;
-    }
-}

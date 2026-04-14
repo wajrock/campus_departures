@@ -1,313 +1,325 @@
-{
-    "esir": {
+[
+    {
+        "schoolId": "rennes2",
+        "schoolName": "Université Rennes 2 - Villejean",
+        "schoolLogo": "rennes2.png",
         "metroLines": [
             {
-                "id": "1002",
-                "name": "Métro B",
-                "stop": "Beaulieu U.",
-                "icon": "metro-b"
+                "id": "1001",
+                "name": "Métro A",
+                "stop": "Villejean-Université",
+                "icon": "metro-a.png"
             }
         ],
-        "bikeLines": [
+        "bikeStations": [
             {
-                "id": "5547",
+                "id": "5556",
                 "name": "Station Vélo Star ",
-                "stop": "Beaulieu Chimie",
-                "icon": "bike-station"
+                "stop": "Berger",
+                "icon": "bike-station.png"
             },
             {
-                "id": "5548",
+                "id": "5552",
                 "name": "Station Vélo Star ",
-                "stop": "Beaulieu U.",
-                "icon": "bike-station"
+                "stop": "Villejean-Université",
+                "icon": "bike-station.png"
             }
         ],
         "busLines": [
             {
                 "id": "0004",
-                "sens": 1,
-                "name": "ZA Saint-Sulpice",
-                "stop": "Beaulieu INSA",
-                "icon": "c4"
+                "sens": 0,
+                "name": "Grand Quarter",
+                "stop": "Villejean-Université",
+                "icon": "C4.png"
             },
             {
                 "id": "0004",
-                "sens": 0,
-                "name": "Grand Quarter",
-                "stop": "Beaulieu INSA",
-                "icon": "c4"
-            },
-            {
-                "id": "0006",
-                "sens": 0,
-                "name": "Cesson-Sévigné",
-                "stop": "Tournebride",
-                "icon": "c6"
-            },
-            {
-                "id": "0006",
                 "sens": 1,
-                "name": "Aeroport",
-                "stop": "Tournebride",
-                "icon": "c6"
-            },
-            {
-                "id": "0014",
-                "sens": 1,
-                "name": "Monniais",
-                "stop": "Beaulieu INSA",
-                "icon": "14"
+                "name": "ZA Saint-Sulpice",
+                "stop": "Villejean-Université",
+                "icon": "C4.png"
             },
             {
                 "id": "0014",
                 "sens": 0,
                 "name": "Roazhon Park",
-                "stop": "Beaulieu INSA",
-                "icon": "14"
+                "stop": "Villejean-Université",
+                "icon": "14.png"
             },
             {
-                "id": "0010",
+                "id": "0014",
                 "sens": 1,
-                "name": "Beaulieu Chimie",
-                "stop": "Beaulieu INSA",
-                "icon": "10"
+                "name": "Monniais",
+                "stop": "Villejean-Université",
+                "icon": "14.png"
             },
             {
-                "id": "0010",
+                "id": "0052",
                 "sens": 0,
-                "name": "Porte de Cleunay",
-                "stop": "Beaulieu INSA",
-                "icon": "10"
+                "name": "Saint-Gilles",
+                "stop": "Villejean-Université",
+                "icon": "52.png"
             },
             {
-                "id": "0067",
+                "id": "0052",
                 "sens": 1,
-                "name": "Anjou",
-                "stop": "Tournebride",
-                "icon": "67"
+                "name": "Chapelle-des-Fougeretz",
+                "stop": "Villejean-Université",
+                "icon": "52.png"
             },
             {
-                "id": "0067",
+                "id": "0012",
                 "sens": 0,
-                "name": "République",
-                "stop": "Tournebride",
-                "icon": "67"
+                "name": "La Poterie",
+                "stop": "Villejean-Université",
+                "icon": "12.png"
+            },
+            {
+                "id": "0068",
+                "sens": 1,
+                "name": "Cheval Blanc (Gévezé)",
+                "stop": "Villejean-Université",
+                "icon": "68.png"
+            },
+             {
+                "id": "0077",
+                "sens": 0,
+                "name": "Pacé (Pâtis Roussel)",
+                "stop": "Villejean-Université",
+                "icon": "77.png"
+            },
+             {
+                "id": "0078",
+                "sens": 1,
+                "name": "Cesson - Viasilva",
+                "stop": "Villejean-Université",
+                "icon": "78.png"
             }
         ]
     },
-    "rsb": {
+    {
+        "schoolId": "rennes1",
+        "schoolName": "Université Rennes - Centre",
+        "schoolLogo": "rennes1.png",
         "metroLines": [
             {
                 "id": "1002",
-                "name": "Métro B",
-                "stop": "Beaulieu U.",
-                "icon": "metro-b"
+                "name": "Métro A",
+                "stop": "Jules Ferry",
+                "icon": "metro-b.png"
             }
         ],
-        "bikeLines": [
+        "bikeStations": [
             {
-                "id": "5547",
+                "id": "5507",
                 "name": "Station Vélo Star ",
-                "stop": "Beaulieu Chimie",
-                "icon": "bike-station"
+                "stop": "Jules Ferry",
+                "icon": "bike-station.png"
             },
             {
-                "id": "5548",
+                "id": "5504",
                 "name": "Station Vélo Star ",
-                "stop": "Beaulieu U.",
-                "icon": "bike-station"
+                "stop": "Place Hoche",
+                "icon": "bike-station.png"
             }
         ],
         "busLines": [
             {
-                "id": "0004",
+                "id": "0002",
                 "sens": 1,
-                "name": "ZA Saint-Sulpice",
-                "stop": "Beaulieu INSA",
-                "icon": "c4"
+                "name": "Cesson - Viasilva",
+                "stop": "Jules Ferry",
+                "icon": "C2.png"
             },
             {
-                "id": "0004",
+                "id": "0002",
                 "sens": 0,
-                "name": "Grand Quarter",
-                "stop": "Beaulieu INSA",
-                "icon": "c4"
+                "name": "Haut Sancé",
+                "stop": "Jules Ferry",
+                "icon": "C2.png"
             },
             {
-                "id": "0006",
+                "id": "0003",
                 "sens": 0,
-                "name": "Cesson-Sévigné",
-                "stop": "Tournebride",
-                "icon": "c6"
+                "name": "Patton",
+                "stop": "Rectorat",
+                "icon": "C3.png"
             },
             {
-                "id": "0006",
+                "id": "0003",
                 "sens": 1,
-                "name": "Aeroport",
-                "stop": "Tournebride",
-                "icon": "c6"
+                "name": "Henri Fréville",
+                "stop": "Rectorat",
+                "icon": "C3.png"
             },
             {
-                "id": "0014",
+                "id": "0005",
                 "sens": 1,
-                "name": "Monniais",
-                "stop": "Beaulieu INSA",
-                "icon": "14"
+                "name": "Saint-Laurent",
+                "stop": "Châteaudun",
+                "icon": "C5.png"
             },
             {
-                "id": "0014",
+                "id": "0005",
                 "sens": 0,
-                "name": "Roazhon Park",
-                "stop": "Beaulieu INSA",
-                "icon": "14"
+                "name": "Lycée Bréquigny",
+                "stop": "Châteaudun",
+                "icon": "C5.png"
             },
             {
                 "id": "0010",
                 "sens": 1,
                 "name": "Beaulieu Chimie",
-                "stop": "Beaulieu INSA",
-                "icon": "10"
+                "stop": "Jules Ferry",
+                "icon": "10.png"
             },
             {
                 "id": "0010",
                 "sens": 0,
                 "name": "Porte de Cleunay",
-                "stop": "Beaulieu INSA",
-                "icon": "10"
+                "stop": "Jules Ferry",
+                "icon": "10.png"
             },
             {
-                "id": "0067",
+                "id": "0012",
                 "sens": 1,
-                "name": "Anjou",
-                "stop": "Tournebride",
-                "icon": "67"
+                "name": "Villejean-Université",
+                "stop": "Sévigné",
+                "icon": "12.png"
             },
             {
-                "id": "0067",
+                "id": "0012",
                 "sens": 0,
-                "name": "République",
-                "stop": "Tournebride",
-                "icon": "67"
+                "name": "La Poterie",
+                "stop": "Sévigné",
+                "icon": "12.png"
             }
         ]
     },
-    "esup": {
+    {
+        "schoolId": "rsb",
+        "schoolName": "Rennes School of Business",
+        "schoolLogo": "rsb.png",
         "metroLines": [
             {
-                "id": "1002",
-                "name": "Métro B",
-                "stop": "Beaulieu U.",
-                "icon": "metro-b"
+                "id": "1001",
+                "name": "Métro A",
+                "stop": "Pontchaillou",
+                "icon": "metro-a.png"
             }
         ],
-        "bikeLines": [
+        "bikeStations": [
             {
-                "id": "5547",
+                "id": "5560",
                 "name": "Station Vélo Star ",
-                "stop": "Beaulieu Chimie",
-                "icon": "bike-station"
+                "stop": "Cucillé - Frac",
+                "icon": "bike-station.png"
             },
             {
-                "id": "5548",
+                "id": "5555",
                 "name": "Station Vélo Star ",
-                "stop": "Beaulieu U.",
-                "icon": "bike-station"
+                "stop": "Département 35",
+                "icon": "bike-station.png"
             }
         ],
         "busLines": [
             {
-                "id": "0004",
+                "id": "0001",
+                "sens": 0,
+                "name": "Saint-Grégoire",
+                "stop": "Donelière",
+                "icon": "C1.png"
+            },
+            {
+                "id": "0001",
                 "sens": 1,
-                "name": "ZA Saint-Sulpice",
-                "stop": "Beaulieu INSA",
-                "icon": "c4"
+                "name": "Chantepie",
+                "stop": "Donelière",
+                "icon": "C1.png"
             },
             {
                 "id": "0004",
                 "sens": 0,
                 "name": "Grand Quarter",
-                "stop": "Beaulieu INSA",
-                "icon": "c4"
+                "stop": "Département 35",
+                "icon": "C4.png"
             },
             {
-                "id": "0006",
+                "id": "0004",
+                "sens": 1,
+                "name": "ZA Saint-Sulpice",
+                "stop": "Département 35",
+                "icon": "C4.png"
+            },
+            {
+                "id": "0012",
+                "sens": 1,
+                "name": "Villejean-Université",
+                "stop": "Donelière",
+                "icon": "12.png"
+            },
+            {
+                "id": "0012",
                 "sens": 0,
-                "name": "Cesson-Sévigné",
-                "stop": "Tournebride",
-                "icon": "c6"
-            },
-            {
-                "id": "0006",
-                "sens": 1,
-                "name": "Aeroport",
-                "stop": "Tournebride",
-                "icon": "c6"
-            },
-            {
-                "id": "0014",
-                "sens": 1,
-                "name": "Monniais",
-                "stop": "Beaulieu INSA",
-                "icon": "14"
+                "name": "La Poterie",
+                "stop": "Donelière",
+                "icon": "12.png"
             },
             {
                 "id": "0014",
                 "sens": 0,
                 "name": "Roazhon Park",
-                "stop": "Beaulieu INSA",
-                "icon": "14"
+                "stop": "Département 35",
+                "icon": "14.png"
             },
             {
-                "id": "0010",
+                "id": "0014",
                 "sens": 1,
-                "name": "Beaulieu Chimie",
-                "stop": "Beaulieu INSA",
-                "icon": "10"
+                "name": "Monniais",
+                "stop": "Département 35",
+                "icon": "14.png"
             },
             {
-                "id": "0010",
+                "id": "0052",
                 "sens": 0,
-                "name": "Porte de Cleunay",
-                "stop": "Beaulieu INSA",
-                "icon": "10"
+                "name": "Saint-Gilles",
+                "stop": "Tillon",
+                "icon": "52.png"
             },
             {
-                "id": "0067",
+                "id": "0052",
                 "sens": 1,
-                "name": "Anjou",
-                "stop": "Tournebride",
-                "icon": "67"
-            },
-            {
-                "id": "0067",
-                "sens": 0,
-                "name": "République",
-                "stop": "Tournebride",
-                "icon": "67"
+                "name": "Chapelle-des-Fougeretz",
+                "stop": "Tillon",
+                "icon": "52.png"
             }
         ]
     },
-    "insa": {
+    {
+        "schoolId": "insa",
+        "schoolName": "INSA Rennes",
+        "schoolLogo": "insa.png",
         "metroLines": [
             {
                 "id": "1002",
                 "name": "Métro B",
                 "stop": "Beaulieu U.",
-                "icon": "metro-b"
+                "icon": "metro-b.png"
             }
         ],
-        "bikeLines": [
+        "bikeStations": [
             {
                 "id": "5547",
                 "name": "Station Vélo Star ",
                 "stop": "Beaulieu Chimie",
-                "icon": "bike-station"
+                "icon": "bike-station.png"
             },
             {
                 "id": "5548",
                 "name": "Station Vélo Star ",
                 "stop": "Beaulieu U.",
-                "icon": "bike-station"
+                "icon": "bike-station.png"
             }
         ],
         "busLines": [
@@ -316,71 +328,242 @@
                 "sens": 1,
                 "name": "ZA Saint-Sulpice",
                 "stop": "Beaulieu INSA",
-                "icon": "c4"
+                "icon": "C4.png"
             },
             {
                 "id": "0004",
                 "sens": 0,
                 "name": "Grand Quarter",
                 "stop": "Beaulieu INSA",
-                "icon": "c4"
+                "icon": "C4.png"
             },
             {
                 "id": "0006",
                 "sens": 0,
                 "name": "Cesson-Sévigné",
                 "stop": "Tournebride",
-                "icon": "c6"
+                "icon": "C6.png"
             },
             {
                 "id": "0006",
                 "sens": 1,
                 "name": "Aeroport",
                 "stop": "Tournebride",
-                "icon": "c6"
+                "icon": "C6.png"
             },
             {
                 "id": "0014",
                 "sens": 1,
                 "name": "Monniais",
                 "stop": "Beaulieu INSA",
-                "icon": "14"
+                "icon": "14.png"
             },
             {
                 "id": "0014",
                 "sens": 0,
                 "name": "Roazhon Park",
                 "stop": "Beaulieu INSA",
-                "icon": "14"
+                "icon": "14.png"
             },
             {
                 "id": "0010",
                 "sens": 1,
                 "name": "Beaulieu Chimie",
                 "stop": "Beaulieu INSA",
-                "icon": "10"
+                "icon": "10.png"
             },
             {
                 "id": "0010",
                 "sens": 0,
                 "name": "Porte de Cleunay",
                 "stop": "Beaulieu INSA",
-                "icon": "10"
+                "icon": "10.png"
             },
             {
                 "id": "0067",
                 "sens": 1,
                 "name": "Anjou",
                 "stop": "Tournebride",
-                "icon": "67"
+                "icon": "67.png"
             },
             {
                 "id": "0067",
                 "sens": 0,
                 "name": "République",
                 "stop": "Tournebride",
-                "icon": "67"
+                "icon": "67.png"
+            }
+        ]
+    },
+    {
+        "schoolId": "esir",
+        "schoolName": "ESIR",
+        "schoolLogo": "esir.png",
+        "metroLines": [
+            {
+                "id": "1002",
+                "name": "Métro B",
+                "stop": "Beaulieu U.",
+                "icon": "metro-b.png"
+            }
+        ],
+        "bikeStations": [
+            {
+                "id": "5547",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu Chimie",
+                "icon": "bike-station.png"
+            },
+            {
+                "id": "5548",
+                "name": "Station Vélo Star ",
+                "stop": "Beaulieu U.",
+                "icon": "bike-station.png"
+            }
+        ],
+        "busLines": [
+            {
+                "id": "0004",
+                "sens": 1,
+                "name": "ZA Saint-Sulpice",
+                "stop": "Beaulieu INSA",
+                "icon": "C4.png"
+            },
+            {
+                "id": "0004",
+                "sens": 0,
+                "name": "Grand Quarter",
+                "stop": "Beaulieu INSA",
+                "icon": "C4.png"
+            },
+            {
+                "id": "0006",
+                "sens": 0,
+                "name": "Cesson-Sévigné",
+                "stop": "Tournebride",
+                "icon": "C6.png"
+            },
+            {
+                "id": "0006",
+                "sens": 1,
+                "name": "Aeroport",
+                "stop": "Tournebride",
+                "icon": "C6.png"
+            },
+            {
+                "id": "0014",
+                "sens": 1,
+                "name": "Monniais",
+                "stop": "Beaulieu INSA",
+                "icon": "14.png"
+            },
+            {
+                "id": "0014",
+                "sens": 0,
+                "name": "Roazhon Park",
+                "stop": "Beaulieu INSA",
+                "icon": "14.png"
+            },
+            {
+                "id": "0010",
+                "sens": 1,
+                "name": "Beaulieu Chimie",
+                "stop": "Beaulieu INSA",
+                "icon": "10.png"
+            },
+            {
+                "id": "0010",
+                "sens": 0,
+                "name": "Porte de Cleunay",
+                "stop": "Beaulieu INSA",
+                "icon": "10.png"
+            },
+            {
+                "id": "0067",
+                "sens": 1,
+                "name": "Anjou",
+                "stop": "Tournebride",
+                "icon": "67.png"
+            },
+            {
+                "id": "0067",
+                "sens": 0,
+                "name": "République",
+                "stop": "Tournebride",
+                "icon": "67.png"
+            }
+        ]
+    },
+    {
+        "schoolId": "esup",
+        "schoolName": "ESUP Rennes",
+        "schoolLogo": "esup.png",
+        "metroLines": [
+            {
+                "id": "1002",
+                "name": "Métro B",
+                "stop": "Gaîté",
+                "icon": "metro-b.png"
+            }
+        ],
+        "bikeStations": [],
+        "busLines": [
+            {
+                "id": "0006",
+                "sens": 0,
+                "name": "Aéroport",
+                "stop": "Saint-Jacques - Gaîté",
+                "icon": "C6.png"
+            },
+            {
+                "id": "0006",
+                "sens": 1,
+                "name": "Cesson-Sévigné",
+                "stop": "Saint-Jacques - Gaîté",
+                "icon": "C6.png"
+            },
+            {
+                "id": "0007",
+                "sens": 0,
+                "name": "Bruz",
+                "stop": "Saint-Jacques - Gaîté",
+                "icon": "C7.png"
+            },
+            {
+                "id": "0047",
+                "sens": 0,
+                "name": "Bruz",
+                "stop": "Saint-Jacques - Gaîté",
+                "icon": "C7ex.png"
+            },
+            {
+                "id": "0013",
+                "sens": 1,
+                "name": "Chantepie (Cucé)",
+                "stop": "Saint-Jacques - Gaîté",
+                "icon": "13.png"
+            },
+            {
+                "id": "0013",
+                "sens": 0,
+                "name": "Bruz (Porte de Ker Lann)",
+                "stop": "Saint-Jacques - Gaîté",
+                "icon": "13.png"
+            },
+            {
+                "id": "0037",
+                "sens": 1,
+                "name": "Morinais",
+                "stop": "Saint-Jacques - Gaîté",
+                "icon": "37.png"
+            },
+            {
+                "id": "0037",
+                "sens": 0,
+                "name": "Henri Fréville",
+                "stop": "Saint-Jacques - Gaîté",
+                "icon": "37.png"
             }
         ]
     }
-}
+]

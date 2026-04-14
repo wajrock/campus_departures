@@ -8,7 +8,7 @@
     &-left {
         display: flex;
         align-items: center;
-        gap: 12rem;
+        gap: 18rem;
 
         .logo {
             display: flex;
@@ -30,16 +30,16 @@
         .school {
             display: flex;
             align-items: center;
-            gap: 7.2rem;
+            gap: 4rem;
             color: var(--third-color);
             padding: 0 4rem;
 
             & svg {
-                height: 18rem;
+                height: 16rem;
             }
 
             & p {
-                font-size: 15rem;
+                font-size: 14rem;
                 font-weight: 500;
             }
         }

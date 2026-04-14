@@ -1,9 +1,9 @@
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {API_BASE_URL, API_KEY} from '../constants';
-import {ApiBikeStation, ApiBusLine} from '../../shared/models/api.models';
+import {ApiBikeStation, ApiBusLine, BikeStation, BusLine} from '../../shared/models/api.models';
 import {map, Observable} from 'rxjs';
-import {BikeStation, BusLine, TransportInfos} from '../../shared/models/models';
+import {TransportInfos} from '../../shared/models/models';
 
 @Injectable({
     providedIn: 'root',

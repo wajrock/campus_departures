@@ -4,7 +4,7 @@ import {SchoolsComponent} from './features/schools/schools.component';
 
 export const routes: Routes = [
     {path: '', component: SchoolsComponent},
-    {path: '/:nameSchool', component: DashboardComponent},
+    {path: ':nameSchool', component: DashboardComponent},
     {path: '**', redirectTo: ''}
 ];
     

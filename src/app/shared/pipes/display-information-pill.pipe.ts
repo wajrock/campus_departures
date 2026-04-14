@@ -9,8 +9,6 @@ export class DisplayInformationPillPipe implements PipeTransform {
     private timeService = inject(TimeService);
 
     transform(data: PillData, currentTime: Date): string {
-        console.log("called");
-        
         if (data.valueState === 'missing') {
             return "-";
         }

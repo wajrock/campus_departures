@@ -7,24 +7,40 @@ export interface TransportInfos {
     sens?: number;
 }
 
-export interface BikeStation {
-    idstation: string,
-    nom: string,
-    etat: "En fonctionnement" | "En panne",
-    nombreemplacementsactuels: number,
-    nombreemplacementsdisponibles: number,
-    nombrevelosdisponibles: number
-}
-
-export interface BusLine {
-    idligne: string,
-    sens: number,
-    depart: string
-}
 
 export interface PillData {
     value: string | number;
     valueState?: 'existing' | 'missing' | 'empty'; 
     type: 'metro' | 'bikes' | 'bus';
     thresholdValue?: number;
+}
+
+export interface SchoolDetails {
+    schoolId: string;
+    schoolName: string;
+    schoolLogo: string;
+    metroLines: MetroLineDetails[];
+    bikeStations: BikeStationDetails[];
+    busLines: BusLineDetails[];
+}
+export interface MetroLineDetails {
+    "id": string,
+    "name": string,
+    "stop": string
+    "icon": string,
+}
+
+export interface BikeStationDetails {
+    "id": string,
+    "name": string,
+    "stop": string
+    "icon": string,
+}
+
+export interface BusLineDetails {
+    "id": string,
+    "sens": number,
+    "name": string,
+    "stop": string
+    "icon": string,
 }
