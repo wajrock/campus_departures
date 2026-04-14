@@ -33,3 +33,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/campus_flow/browser/
           server-dir: ./
+          dangerous-clean-slate: true 
